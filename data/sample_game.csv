@@ -1,0 +1,6 @@
+timestamp,game_id,quarter,time_remaining,team,play_type,points_scored,player_name,home_score,away_score
+2024-09-15 13:00:00,KC_BAL_001,1,15:00,KC,kickoff,0,Harrison Butker,0,0
+2024-09-15 13:05:23,KC_BAL_001,1,12:34,BAL,touchdown,7,Lamar Jackson,0,7
+2024-09-15 13:08:45,KC_BAL_001,1,10:15,KC,field_goal,3,Harrison Butker,3,7
+2024-09-15 13:15:12,KC_BAL_001,1,7:42,KC,touchdown,7,Travis Kelce,10,7
+2024-09-15 13:22:30,KC_BAL_001,2,14:55,BAL,field_goal,3,Justin Tucker,10,10
