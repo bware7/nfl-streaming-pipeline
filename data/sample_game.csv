@@ -1,6 +1,20 @@
 timestamp,game_id,quarter,time_remaining,team,play_type,points_scored,player_name,home_score,away_score
-2024-09-15 13:00:00,KC_BAL_001,1,15:00,KC,kickoff,0,Harrison Butker,0,0
-2024-09-15 13:05:23,KC_BAL_001,1,12:34,BAL,touchdown,7,Lamar Jackson,0,7
-2024-09-15 13:08:45,KC_BAL_001,1,10:15,KC,field_goal,3,Harrison Butker,3,7
-2024-09-15 13:15:12,KC_BAL_001,1,7:42,KC,touchdown,7,Travis Kelce,10,7
-2024-09-15 13:22:30,KC_BAL_001,2,14:55,BAL,field_goal,3,Justin Tucker,10,10
+2025-10-02 13:00:00,KC_BAL_001,1,15:00,KC,kickoff,0,Harrison Butker,0,0
+2025-10-02 13:02:15,KC_BAL_001,1,14:23,BAL,run,0,Derrick Henry,0,0
+2025-10-02 13:03:45,KC_BAL_001,1,13:18,BAL,pass,0,Lamar Jackson,0,0
+2025-10-02 13:05:23,KC_BAL_001,1,12:05,BAL,touchdown,7,Lamar Jackson,0,7
+2025-10-02 13:08:45,KC_BAL_001,1,10:15,KC,pass,0,Patrick Mahomes,0,7
+2025-10-02 13:10:12,KC_BAL_001,1,9:22,KC,run,0,Isiah Pacheco,0,7
+2025-10-02 13:11:30,KC_BAL_001,1,8:45,KC,field_goal,3,Harrison Butker,3,7
+2025-10-02 13:15:50,KC_BAL_001,1,6:12,BAL,pass,0,Lamar Jackson,3,7
+2025-10-02 13:18:20,KC_BAL_001,1,4:33,BAL,fumble,0,Derrick Henry,3,7
+2025-10-02 13:20:05,KC_BAL_001,1,3:15,KC,pass,0,Patrick Mahomes,3,7
+2025-10-02 13:22:30,KC_BAL_001,1,1:42,KC,touchdown,7,Travis Kelce,10,7
+2025-10-02 13:30:00,KC_BAL_001,2,15:00,BAL,kickoff,0,Justin Tucker,10,7
+2025-10-02 13:33:15,KC_BAL_001,2,13:20,BAL,pass,0,Lamar Jackson,10,7
+2025-10-02 13:35:40,KC_BAL_001,2,11:55,BAL,field_goal,3,Justin Tucker,10,10
+2025-10-02 13:40:10,KC_BAL_001,2,9:08,KC,pass,0,Patrick Mahomes,10,10
+2025-10-02 13:42:25,KC_BAL_001,2,7:44,KC,interception,0,Patrick Mahomes,10,10
+2025-10-02 13:45:50,KC_BAL_001,2,5:22,BAL,pass,0,Lamar Jackson,10,10
+2025-10-02 13:48:12,KC_BAL_001,2,3:18,BAL,touchdown,7,Mark Andrews,10,17
+2025-10-02 13:52:30,KC_BAL_001,2,0:45,KC,pass,0,Patrick Mahomes,10,17
