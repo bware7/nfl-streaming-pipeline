@@ -12,7 +12,7 @@ from utils.utils_logger import setup_logger
 
 # Configuration
 TOPIC = 'nfl_events'
-DATA_FILE = Path('data/sample_game.csv')
+DATA_FILE = Path('data/ravens_bills_week1.csv')  # Changed from sample_game.csv
 DELAY_SECONDS = 1.5  # Time between plays
 
 def main():

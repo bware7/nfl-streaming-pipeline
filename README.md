@@ -30,7 +30,8 @@ nfl-streaming-pipeline/
 │   ├── utils_logger.py          # Logging configuration
 │   └── utils_kafka.py           # Kafka producer/consumer helpers
 ├── data/
-│   └── sample_game.csv          # Sample NFL play data
+│   ├── sample_game.csv          # Original sample data
+│   └── ravens_bills_week1.csv   # Real game data (Week 1, 2025)
 ├── scripts/
 │   └── prepare_kafka.sh         # Kafka setup script
 └── requirements.txt
@@ -84,10 +85,10 @@ Watch the data stream and charts update in real-time!
 ## How It Works
 
 ### Producer (`nfl_producer.py`)
-1. Reads play-by-play data from CSV file
+1. Reads play-by-play data from CSV file (Ravens-Bills Week 1, 2025)
 2. Converts each row to JSON format
 3. Streams messages to Kafka topic `nfl_events` with 1.5s delay
-4. Simulates real-time game progression
+4. Simulates real-time game progression of a 41-40 thriller
 
 ### Consumer (`nfl_consumer.py`)
 For each incoming message:
@@ -101,33 +102,42 @@ For each incoming message:
 ### Message Format
 ```json
 {
-  "timestamp": "2025-10-02 13:05:23",
-  "game_id": "KC_BAL_001",
-  "quarter": 1,
-  "time_remaining": "12:05",
-  "team": "BAL",
+  "timestamp": "2025-09-23 21:59:11",
+  "game_id": "BAL_BUF_001",
+  "quarter": 4,
+  "time_remaining": "0:49",
+  "team": "BUF",
   "play_type": "touchdown",
   "points_scored": 7,
-  "player_name": "Lamar Jackson",
-  "home_score": 0,
-  "away_score": 7
+  "player_name": "Khalil Shakir",
+  "home_score": 41,
+  "away_score": 40
 }
 ```
 
-## Visualization
+## Visualizations
 
 ![NFL Game Tracker Visualization](images/nfl_visualization.png)
+![Ravens vs Bills Visualization](images/Ravens_vs_Bills.png)
 
 The visualization includes:
 - **Top Panel**: Score progression line chart
   - X-axis: Play number
   - Y-axis: Cumulative score
-  - Two lines: KC (red) vs BAL (purple)
+  - Two lines: BUF (blue) vs BAL (purple)
   
 - **Bottom Panel**: Recent momentum bar chart
   - Shows points scored in last 10 plays
   - Reveals which team has "hot hand"
   - Updates dynamically as game progresses
+
+## Game Highlights - Ravens vs Bills (Week 1, 2024)
+This visualization showcases one of the most exciting games of the 2025 NFL season:
+
+**Final Score**: Bills 41, Ravens 40
+**Lead Changes**: Multiple momentum shifts throughout
+**Fourth Quarter Drama**: Ravens led 40-34 before Bills scored 7 unanswered points
+**Perfect for Analysis**: Shows how momentum visualization reveals comeback patterns
 
 ## Key Analytics Insights
 

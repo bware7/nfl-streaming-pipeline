@@ -40,7 +40,7 @@ class NFLGameTracker:
         # Calculate momentum (points in last 10 plays)
         self.momentum['home'] = sum(
             p['points_scored'] for p in self.recent_plays 
-            if p['team'] == 'KC' and p['points_scored'] > 0
+            if p['team'] == 'BUF' and p['points_scored'] > 0
         )
         self.momentum['away'] = sum(
             p['points_scored'] for p in self.recent_plays 
@@ -58,7 +58,7 @@ class NFLGameTracker:
 def setup_visualization():
     """Setup matplotlib figure with subplots."""
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 8))
-    fig.suptitle('NFL Game Tracker - KC vs BAL', fontsize=16, fontweight='bold')
+    fig.suptitle('NFL Game Tracker - BUF vs BAL (Week 1, 2025)', fontsize=16, fontweight='bold')
     
     # Score progression chart
     ax1.set_xlabel('Play Number')
@@ -94,9 +94,9 @@ def update_chart(frame, tracker, consumer, ax1, ax2, line1, line2):
         
         # Update momentum bar chart
         ax2.clear()
-        teams = ['KC', 'BAL']
+        teams = ['BUF', 'BAL']
         momentum_values = [tracker.momentum['home'], tracker.momentum['away']]
-        colors = ['#E31837', '#241773']  # Team colors
+        colors = ['#00338D', '#241773']  
         
         bars = ax2.bar(teams, momentum_values, color=colors, alpha=0.7)
         ax2.set_ylabel('Points (Last 10 Plays)')
@@ -128,7 +128,7 @@ def main():
     
     # Setup visualization
     fig, ax1, ax2 = setup_visualization()
-    line1, = ax1.plot([], [], 'o-', color='#E31837', linewidth=2, markersize=6, label='KC (Home)')
+    line1, = ax1.plot([], [], 'o-', color='#00338D', linewidth=2, markersize=6, label='BUF (Home)')
     line2, = ax1.plot([], [], 'o-', color='#241773', linewidth=2, markersize=6, label='BAL (Away)')
     ax1.legend()
     

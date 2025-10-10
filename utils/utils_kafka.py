@@ -15,6 +15,6 @@ def create_kafka_consumer(topic, bootstrap_servers='localhost:9092'):
         topic,
         bootstrap_servers=[bootstrap_servers],
         value_deserializer=lambda x: json.loads(x.decode('utf-8')),
-        auto_offset_reset='earliest',
+        auto_offset_reset='latest',
         api_version=(0, 10, 1)
     )
